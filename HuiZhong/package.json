@@ -9,8 +9,13 @@
 	"dependencies": {
 		"react": "16.0.0-alpha.6",
 		"react-native": "0.44.3",
+		"react-native-deprecated-custom-components": "^0.1.1",
+		"react-native-swiper": "^1.5.12",
+		"react-native-tab-navigator": "^0.3.4",
+		"react-native-viewpager": "^0.2.13",
 		"react-navigation": "^1.0.0-beta.11",
-		"react-redux": "^5.0.5"
+		"react-redux": "^5.0.5",
+		"react-timer-mixin": "^0.13.3"
 	},
 	"devDependencies": {
 		"babel-jest": "20.0.3",

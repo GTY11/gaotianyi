@@ -8,7 +8,7 @@
  */
 
 #import "AppDelegate.h"
-
+#import <IQKeyboardManager.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -17,6 +17,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+  
+  IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+  
+  manager.enable = YES;
+  manager.shouldResignOnTouchOutside = YES;
+  manager.shouldToolbarUsesTextFieldTintColor = YES;
+  manager.enableAutoToolbar = YES;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
